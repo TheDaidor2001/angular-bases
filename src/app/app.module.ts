@@ -8,10 +8,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CouterModule } from './counter/counter.module';
 import { HeroesModule } from './heroes/heroes.module';
+import { CbzModule } from './cbz/cbz.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, CouterModule, HeroesModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    CouterModule,
+    HeroesModule,
+    CbzModule,
+  ],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
 })
